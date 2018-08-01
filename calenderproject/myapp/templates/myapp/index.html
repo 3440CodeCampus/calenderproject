@@ -2,6 +2,13 @@
 {% block content %}
 
 <div class=" jumbotron">
-<h1 class="display-3">Hello, world!</h1>
+<h1 class="display-4">Event Calender</h1>
+</div>
+<div class="container">
+  <div class="row">
+    {% for event in events %}
+  {% include 'myapp/_calender_entry.html' %}
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

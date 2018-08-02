@@ -1,0 +1,16 @@
+{% load static %}
+<div class="card-deck-wrapper">
+  <div class="card-deck">
+    <div class="card">
+
+      <img  onclick="window.location='{% url "index" %}'" class="card-img-top" src="{% static 'myapp/img/back.jpg' %}" width="40" height="40"  alt="go back">
+      <div class="card-block">
+        <h4 class="card-title">{{ detail.name }}</h4>
+        <p class="card-text">{{ detail.description }}</p>
+        <p class="card-text"><small class="text-muted">{{ detail.date }}</small></p>
+      </div>
+    </div>
+
+
+  </div>
+</div>

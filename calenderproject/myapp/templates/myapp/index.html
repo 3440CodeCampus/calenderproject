@@ -5,7 +5,9 @@
 </div>
 <div class="container">
   <div class="row">
-    {% for event in events %} {% include 'myapp/_calender_entry.html' %} {% endfor %}
+    {% for event in events %} {% include 'myapp/_calender_entry.html' %}
+    <br>
+    <button type="button" onclick="window.location='{% url "detail" pk=event.id %}'"class="btn btn-primary">More info</button>{% endfor %}
   </div>
 </div>
 {% endblock %}

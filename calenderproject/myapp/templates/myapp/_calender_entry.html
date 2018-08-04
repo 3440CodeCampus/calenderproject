@@ -5,5 +5,7 @@
   <p>{{ event.date }}</p>
   <br>
   <button type="button" onclick="window.location='{% url "detail" pk=event.id %}'"class="btn btn-primary">More info</button>
+  <br>
+  <button data-id="{{event.id}}" type="button" onclick="deleteCalenderEntry(this)"class="btn btn-danger"> delete </button>
 
 </div>

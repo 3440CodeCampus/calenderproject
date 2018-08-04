@@ -1,7 +1,9 @@
-<div class="col-lg-4">
+<div class="col-lg-3">
 
   <h4>{{ event.name }}</h4>
   <p>{{ event.description }}</p>
   <p>{{ event.date }}</p>
+  <br>
+  <button type="button" onclick="window.location='{% url "detail" pk=event.id %}'"class="btn btn-primary">More info</button>
 
 </div>

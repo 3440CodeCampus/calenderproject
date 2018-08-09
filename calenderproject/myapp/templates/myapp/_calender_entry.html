@@ -1,11 +1,20 @@
-<div class="col-lg-3">
+<!-- yeti card -->
+<!-- div class="card border-primary mb-3" style="max-width: 20rem;" -->
+<div style="margin:5px;"><!-- frame -->
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">{{ event.name }}</div>
+  <div class="card-body">
 
-  <h4>{{ event.name }}</h4>
-  <p>{{ event.description }}</p>
-  <p>{{ event.date }}</p>
-  <br>
-  <button type="button" onclick="window.location='{% url "detail" pk=event.id %}'"class="btn btn-primary">More info</button>
-  <br>
-  <button data-id="{{event.id}}" type="button" onclick="deleteCalenderEntry(this)"class="btn btn-danger"> delete </button>
+    <p class="card-text">{{ event.description }}</p>
+    <h7 class="card-title">{{ event.date }}</h7>
+  </div>
 
+<div class="card-footer">
+
+<button type="button" onclick="window.location='{% url "detail" pk=event.id %}'"class="btn btn-Active btn-sm">More info</button>
+<br>
+<button data-id="{{event.id}}" type="button" onclick="deleteCalenderEntry(this)"class="btn btn-primary btn-sm"> delete </button>
 </div>
+</div>
+</div><!-- frame end  -->
+<!-- end yeti -->
